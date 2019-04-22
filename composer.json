@@ -1,0 +1,23 @@
+{
+    "name": "el_amine/lybra",
+    "description": "Site du lycee de boubara",
+    "authors": [
+        {
+            "name": "Mouhamed Amine",
+            "email": "mouhamedelbra@gmail.com"
+        }
+    ],
+    
+    "autoload": {
+        "files": [
+            "config/config.php",
+            "include/functions.php"
+        ],
+        "classmap": [
+            "config/Database.php"
+        ],
+        "psr-4": {
+            "Lybra\\" : "classe"
+        }
+    }
+}
