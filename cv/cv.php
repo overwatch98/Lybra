@@ -112,7 +112,7 @@
                             <div class="univer">
                               <img src="cv/asset/img/university.svg" alt="">
                             </div>
-                            <h5 class="red-t mt-2 text-center">Lycée de Garoua-Boulai</h4>
+                            <h5 class="red-t mt-2 text-center">Garoua-Boulai Highschool</h4>
                             <p class="text-center">Diplôme d'enseignement géneral</p>
                             <hr class="hr-educ m-auto">
                             <p class="text-center mt-2">Math, Svt, Physique, Chimie</p>
@@ -162,7 +162,7 @@
         <div id="contact">
             <div class="container pt-5 pb-5">
                 <hr class="hr-sep-w">
-                <h3 class="text-center sec-t">CONTACT</h3>
+                <h3 class="text-center sec-t">ME CONTACTER</h3>
                 <form action="" class="col-lg-8 col-md-8 col-sm-12 mt-5">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Prenom *">
