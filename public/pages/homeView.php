@@ -1,5 +1,5 @@
 <?php
-require 'php/home.php';
+require 'php/_home.php';
 ob_start();
 foreach($posts as $post){
 Lybra\App::setTitle($post->title);
