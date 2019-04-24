@@ -5,7 +5,7 @@ $db = App::getDb();
     extract($_POST);
 
     if(isset($username) && !empty($username)){
-        $user = $db->prepare("SELECT * FROM users WHERE username = ? ", [$username])->fetch();
+        $user = $db->find('user', 'username', $username);
        if (sha1($password) == $user->password){
            
           $_SESSION['auth'] = $user;

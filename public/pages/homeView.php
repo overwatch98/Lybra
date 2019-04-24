@@ -1,8 +1,7 @@
 <?php
 require 'php/home.php';
 ob_start();
-foreach($posts as $post){
-Lybra\App::setTitle($post->title);
+Lybra\App::setTitle("Accueil");
 ?>
 <div class="banniere">
     <img src="<?= LOGO ?>banniere.jpg" class="embed-responsive" alt="">
@@ -12,13 +11,12 @@ Lybra\App::setTitle($post->title);
     </div>
 </div>
 <div class="container min-h">
-
+    <?php foreach($posts as $post): ?>
     <h1><?= $post->title ?></h1>
     <p><?= $post->content ?></p>
-
+    <?php endforeach ; ?>
 </div>
 <?php 
-}
 $content = ob_get_clean();
 require TEMPLATE;
 ?>
