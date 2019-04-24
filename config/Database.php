@@ -32,5 +32,16 @@ class Database {
     public function lastInsertId(){
         return $this->pdo->lastInsertId();
     }
+    
+    public function getAll(string $table){
+        $req = $this->query("SELECT * FROM $table");
+        $data = $req->fetchAll();
+        return $data;
+    }
+
+    public function find(string $table, string $field, $params) {
+        $recod = $this->prepare("SELECT * FROM $table WHERE $field = ?", [$params]);
+        return $recod;
+    }
 
 }
