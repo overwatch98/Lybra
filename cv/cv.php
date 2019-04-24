@@ -85,16 +85,17 @@
                   <div class="row">
                       <div class="col-lg-6 col-md-6 col-sm-12 p-3">
                           <div class="card p-3">
-                              <h4 class="text-center">GSCHOOL</h4>
+                              <h4 class="text-center">LYBRA</h4>
                               <h5 class="red-t">Développeur web junior</h5>
-                              <span class="text-muted">©2018-2019</span>
+                              <span class="text-muted">©2019</span>
                               <p>Sous la demande de mon professeur d'informatique nous avons immaginés ensemble Lybra qui est le site internet du lycée de Boubara et j'ai realisé </p>
                           </div>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 p-3">
                           <div class="card p-3">
-                              <h4 class="text-center">LYBRA</h4>
+                              <h4 class="text-center">GSCHOOL</h4>
                               <h5 class="red-t">Développeur web junior</h5>
+                              <span class="text-muted">©2018-2019</span>
                               <p>Création et realisation du site internet du lycée de Garoua-Boulaui</p>
                           </div>
                       </div>
