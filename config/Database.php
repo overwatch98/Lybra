@@ -39,8 +39,9 @@ class Database {
         return $data;
     }
 
-    public function find(string $table, string $field, $params) {
-        $recod = $this->prepare("SELECT * FROM $table WHERE $field = ?", [$params]);
+    public function find( $table, $field, $params) {
+        $recod = $this->prepare("SELECT * FROM {$table} WHERE {$field} = ?", [$params]);
+        $recod =  $recod->fetch();
         return $recod;
     }
 

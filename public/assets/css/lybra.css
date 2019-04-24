@@ -18,7 +18,7 @@
 .banniere-block{
     width: 100%;
     position: absolute;
-    top: 25%;
+    top: 23%;
     text-align: center;
     color: #fff;
     z-index: 100;
@@ -26,6 +26,26 @@
 .banniere-block p em{
     color: #ccc;
     font-size: 20px;
+}
+
+@media screen and (max-width: 780px){
+    .banniere{
+        height: 200px;
+    }
+    .banniere img{
+        width: 100%;
+        height: 100%;
+    }
+    .banniere-block{
+        top: 20%;
+        font-size: 15px;
+    }
+    .banniere-block p em{
+        font-size: 15px;
+    }
+    .banniere-block h1{
+        font-size: 25px;
+    }
 }
 
 /* 

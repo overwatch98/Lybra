@@ -24,8 +24,11 @@
 					<li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
 					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 					<?php if (isset($_SESSION['auth'])) : ?>
+					<li class="nav-item"><a class="nav-link" href="sedeconnecter">Se deconnecter</a></li>
 					<li class="nav-item"><a class="nav-link" href="admin">ADMINISTRATION</a></li>
-					<?php endif ; ?>
+					<?php else : ?>
+					<li class="nav-item"><a class="nav-link" href="login">Se connecter</a></li>
+					<?php endif; ?>
 				</ul>
 			</div>
 		</div>

@@ -1,5 +1,4 @@
 <?php
-require 'php/home.php';
 ob_start();
 Lybra\App::setTitle("Erreur 404");
 ?>

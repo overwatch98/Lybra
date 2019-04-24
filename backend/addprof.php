@@ -7,10 +7,10 @@ ob_start();
 
 <div class="container mt-5 mb-5">
     <h3 class="text-center mb-4 red-f">Ajouter un professeur<h3>
-    <?php if (!empty($error)):?>
-        <div class="alert alert-danger"><?= $error ?></div>
-    <?php endif ; ?>
-    <form action="" method="post" enctype="multipart/form-data" class="col-lg-6 col-md-6 col-sm-12 m-auto">
+    <form action="" method="post" enctype="multipart/form-data" class="col-lg-6 col-md-8 col-sm-12 m-auto">
+        <?php if (!empty($error)):?>
+            <div class="alert alert-danger"><?= $error ?></div>
+        <?php endif ; ?>
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Mr ou Mme ..Nom" name="firstName">
         </div>
