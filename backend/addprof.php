@@ -12,7 +12,10 @@ ob_start();
             <div class="alert alert-danger"><?= $error ?></div>
         <?php endif ; ?>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Mr ou Mme ..Nom" name="firstName">
+            <input type="text" class="form-control" placeholder="Mr ou Mme " name="sexe">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Nom" name="firstName">
         </div>
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Prenom" name="lastName">

@@ -18,7 +18,7 @@ ob_start();
                         <?php endif ; ?>
                     </div>
                     <hr>
-                    <h5 class="blue-f"><?= $prof->firstName;?> <?= $prof->lastName ?></h5>
+                    <h5 class="blue-f"><?= $prof->sexe ?> <?= $prof->firstName;?> <?= $prof->lastName ?></h5>
                     <em><?= $prof->statusprof ?></em>
                 </div>
             </div>

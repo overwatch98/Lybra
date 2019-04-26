@@ -6,11 +6,11 @@ if(!empty($_POST)){
 
 	extract($_POST);
 
-	if(empty($firstName) || empty($lastName) || empty($status)){
+	if(empty($firstName) || empty($lastName) || empty($status) || empty($sexe)){
 		$error = "Veuillez remplir tout les champs";
 	}else{
-		if(is_string($firstName) && is_string($lastName) && is_string($status)){
-			$req = $db->prepare("INSERT INTO profs SET firstName = ?, lastName = ?, statusprof = ?", [$firstName, $lastName, $status]);
+		if(is_string($firstName) && is_string($lastName) && is_string($status) && is_string($sexe)){
+			$req = $db->prepare("INSERT INTO profs SET sexe = ? firstName = ?, lastName = ?, statusprof = ?", [$sexe, $firstName, $lastName, $status]);
 		}
 	}
 
