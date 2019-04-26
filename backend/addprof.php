@@ -1,5 +1,5 @@
 <?php 
-require 'php/_addprof.php';
+require '../php/_addprof.php';
 Lybra\App::setTitle('Autentification');
 ob_start();
 

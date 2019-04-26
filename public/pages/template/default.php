@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<base href="<?= BASE ?>">
-    <link rel="stylesheet" href="public/assets/css/default.css">
-    <link rel="stylesheet" href="public/assets/css/lybra.css">
-    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= CSS ?>default.css">
+    <link rel="stylesheet" href="<?= CSS ?>lybra.css">
+    <link rel="stylesheet" href="<?= CSS ?>bootstrap.min.css">
     <title><?= Lybra\App::getTitle() ?></title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 		<div class="container">
 			<h1 class="navbar-brand logo"><?= getLink("Lybra") ?></h1>
 			<button type="button" class="navbar-toggler mb-2" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expand="false" aria-label="Toggle navigation">
-	            <span class="navbar-toggler-icon btn-nav"> <img src="public/logo/menu.png" alt=""> </span>
+	            <span class="navbar-toggler-icon btn-nav"> <img src="logo/menu.png" alt=""> </span>
 	        </button>
 			<div class="collapse navbar-collapse mr-0" id="mynav">
 				<ul class="navbar-nav">
@@ -43,7 +43,7 @@
 		</div>
 		<p class="copy-r">Copyright © <?= getLink("Lybra") ?> tout droit reservé</p>
 	</footer>  
-	<script type="text/javascript" src="public/assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="public/assets/js/bootstrap.min.js"></script>  
+	<script type="text/javascript" src="<?= JS ?>jquery.min.js"></script>
+    <script type="text/javascript" src="<?= JS ?>bootstrap.min.js"></script>  
 </body>
 </html>

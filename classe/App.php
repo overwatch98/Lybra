@@ -1,6 +1,6 @@
 <?php
 namespace Lybra;
-require 'config/Database.php';
+require '../config/Database.php';
 
 class App{
 

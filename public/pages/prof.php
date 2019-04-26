@@ -1,6 +1,6 @@
 <?php 
 Lybra\App::setTitle('Liste des professeurs');
-require "php/_prof.php";
+require "../php/_prof.php";
 ob_start();
 ?>
 
@@ -12,9 +12,9 @@ ob_start();
                 <div class="card-prof p-4 mb-5 mt-2 text-center">
                     <div class="avatar-prof">
                         <?php if (!empty($prof->avatar)): ?>
-                            <img class="img img-thumbnail" src="public/avatar/<?= $prof->avatar ?>" alt="avatarprof">
+                            <img class="img img-thumbnail" src="avatar/<?= $prof->avatar ?>" alt="avatarprof">
                         <?php else : ?>
-                            <img class="img img-thumbnail" src="public/avatar/default.png" alt="avatarprof">
+                            <img class="img img-thumbnail" src="avatar/default.png" alt="avatarprof">
                         <?php endif ; ?>
                     </div>
                     <hr>

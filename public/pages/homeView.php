@@ -1,5 +1,5 @@
 <?php
-require 'php/_home.php';
+require '../php/_home.php';
 ob_start();
 Lybra\App::setTitle("Accueil");
 ?>

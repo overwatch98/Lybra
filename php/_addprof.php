@@ -24,7 +24,7 @@ if (!empty($_FILES['avatar']['name'])) {
 		if ($_FILES['avatar']['size'] > $maxSize) {
 			$error = 'Votre photo de profil ne doit pas dépasser 2Mo';
 		}else{
-			$path = 'public/avatar/' . $_FILES['avatar']['name'];
+			$path = 'avatar/' . $_FILES['avatar']['name'];
 			$result = move_uploaded_file($_FILES['avatar']['tmp_name'], $path);
 			if($result){
 				$req = $db->prepare("UPDATE profs SET avatar = ? WHERE id = ?", [$_FILES['avatar']['name'], $id]);

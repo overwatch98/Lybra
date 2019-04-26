@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="cv/asset/css/cv.css">
-    <link rel="stylesheet" href="cv/asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="cv/asset/css/all.css">
-    <title>Cv Mouhamed Amine</title>
+    <link rel="stylesheet" href="../cv/asset/css/cv.css">
+    <link rel="stylesheet" href="../cv/asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../cv/asset/css/all.css">
+    <title>../cv Mouhamed Amine</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top">
         <button type="button" class="navbar-toggler mb-2" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expand="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon btn-nav"> <img src="cv/asset/img/menu.png" alt=""> </span>
+            <span class="navbar-toggler-icon btn-nav"> <img src="../cv/asset/img/menu.png" alt=""> </span>
         </button>
         <div class="collapse navbar-collapse" id="mynav">
             <ul class="navbar-nav m-auto">
@@ -30,7 +30,7 @@
     <div data-spy="scroll" data-target="mynav" data-offset="0">
        <div id="moi" class="container-fluid cv-header">
           <div class="img">
-              <img src="cv/asset/img/profil.jpg" alt="">
+              <img src="../cv/asset/img/profil.jpg" alt="">
               <hr class="imgdis">
               <em>Hello ! moi c'est </em>
               <h4>Mouhamed Amine</h4>
@@ -111,7 +111,7 @@
                         <div class="p-3 card mb-4">
                             <span class="text-muted text-center mb-2">2011-2017</span>
                             <div class="univer">
-                              <img src="cv/asset/img/university.svg" alt="">
+                              <img src="../cv/asset/img/university.svg" alt="">
                             </div>
                             <h5 class="red-t mt-2 text-center">Garoua-Boulai Highschool</h4>
                             <p class="text-center">Diplôme d'enseignement géneral</p>
@@ -123,7 +123,7 @@
                         <div class="p-3 card mb-4">
                             <span class="text-muted text-center mb-2">2017-Aujord'hui</span>
                             <div class="univer">
-                              <img src="cv/asset/img/university.svg" alt="">
+                              <img src="../cv/asset/img/university.svg" alt="">
                             </div>
                             <h5 class="red-t text-center mt-2">Openclassrooms</h4>
                             <p class="text-center">Formation online "Développeur web"</p>
@@ -140,16 +140,16 @@
                 <h3 class="text-center sec-t">PORTEFOLIO</h3>
                 <div class="row pr-sec">
                     <div class="sec-exp-p col-lg-6 col-md-6 pb-3">
-                        <img src="cv/asset/img/pr2.png" alt="">
+                        <img src="../cv/asset/img/pr2.png" alt="">
                     </div>
                     <div class="sec-exp-p col-lg-6 col-md-6 pb-3">
-                        <img src="cv/asset/img/pr3.png" alt="">
+                        <img src="../cv/asset/img/pr3.png" alt="">
                     </div>
                     <div class="sec-exp-p col-lg-6 col-md-6 pb-3">
-                        <img src="cv/asset/img/pr4.png" alt="">
+                        <img src="../cv/asset/img/pr4.png" alt="">
                     </div>
                     <div class="sec-exp-p col-lg-6 col-md-6 pb-3">
-                        <img src="cv/asset/img/pr1.png" alt="">
+                        <img src="../cv/asset/img/pr1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -187,8 +187,8 @@
             <p class="text-center">Copyright © Mouhamed Amine</p>
         </div>
     </footer>
-    <script type="text/javascript" src="cv/asset/js/jquery.min.js"></script>
-    <script type="text/javascript" src="cv/asset/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="cv/asset/js/cv.js"></script>
+    <script type="text/javascript" src="../cv/asset/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../cv/asset/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../cv/asset/js/cv.js"></script>
 </body>
 </html>

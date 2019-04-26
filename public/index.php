@@ -1,5 +1,5 @@
 <?php
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 if (session_status() === PHP_SESSION_NONE){
     session_start();
 }
@@ -24,16 +24,16 @@ try {
         require PAGE . 'contact.php';
     }
     elseif($url === 'mouhamedamine' || $url === 'quisuisje'){
-        require 'cv/cv.php';
+        require CV . 'cv.php';
     }
     elseif($url === 'login'){
         require PAGE . 'loginView.php';
     }
     elseif($url === 'ajoutdeprof'){
-        require 'backend/addprof.php';
+        require ADMIN . 'addprof.php';
     }
     elseif($url === 'admin'){
-        require 'backend/home.php';
+        require ADMIN . 'home.php';
     }
     elseif($url === 'sedeconnecter'){
         unset($_SESSION['auth']);
