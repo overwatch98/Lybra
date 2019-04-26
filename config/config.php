@@ -12,4 +12,4 @@ define('ADMIN', '../backend/');
 define('CV', '../cv/');
 define('LOGO', 'logo/');
 define('IMG', 'img/');
-define('BASE', 'http://' . $host . '/lab/lybra/public/');
+define('BASE', 'http://' . $host . '/lybra/public/');
