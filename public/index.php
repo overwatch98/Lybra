@@ -4,38 +4,35 @@ if (session_status() === PHP_SESSION_NONE){
     session_start();
 }
 try {
-
-    if(isset($_GET['url'])){
-        $url = $_GET['url'];
-    }else{
-        $url = 'accueil';
-    }
+    $uri = '';
+    $uri = $_SERVER['REQUEST_URI'];
+    $uri = trim($uri, '/');
     
-    if($url === 'accueil' || $url === 'accueil.html' || $url === 'home'){
+    if($uri === 'accueil' || $uri === 'accueil.html' || $uri === 'home'){
         require PAGE.'homeView.php';
     }
-    elseif($url === 'professeur' || $url === 'professeur.html' || $url === 'prof'){
+    elseif($uri === 'professeur' || $uri === 'professeur.html' || $uri === 'prof'){
         require PAGE . 'prof.php';
     }
-    elseif($url === 'apropos' || $url === 'apropos.html' || $url === 'about'){
+    elseif($uri === 'apropos' || $uri === 'apropos.html' || $uri === 'about'){
         require PAGE . 'aboutView.php';
     }
-    elseif($url === 'contact' || $url === 'contact.html' || $url === 'nous-contacter'){
+    elseif($uri === 'contact' || $uri === 'contact.html' || $uri === 'nous-contacter'){
         require PAGE . 'contact.php';
     }
-    elseif($url === 'mouhamedamine' || $url === 'quisuisje'){
+    elseif($uri === 'mouhamedamine' || $uri === 'quisuisje'){
         require CV . 'cv.php';
     }
-    elseif($url === 'login'){
+    elseif($uri === 'login'){
         require PAGE . 'loginView.php';
     }
-    elseif($url === 'ajoutdeprof'){
+    elseif($uri === 'ajoutdeprof'){
         require ADMIN . 'addprof.php';
     }
-    elseif($url === 'admin'){
+    elseif($uri === 'admin'){
         require ADMIN . 'home.php';
     }
-    elseif($url === 'sedeconnecter'){
+    elseif($uri === 'sedeconnecter'){
         unset($_SESSION['auth']);
         redirect('login');
     }
