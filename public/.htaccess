@@ -1,9 +1,3 @@
-<FilesMatch "composer.json">
-    AuthName "Acces INTERDIT"
-    AuthUserFile "C:\xampp\htdocs\LAB\Lybra\.htpasswd"
-    Require valid-user
-</FilesMatch>
-
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
