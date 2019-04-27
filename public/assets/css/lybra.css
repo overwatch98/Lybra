@@ -65,13 +65,12 @@
 
 
 .card-prof{
-    background-color: #eee;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 0px 5px #c5c5c5;
 }
 
 .avatar-prof{
-    width: 180px;
+    width: auto;
     margin: auto;
 }
 .avatar-prof img{
