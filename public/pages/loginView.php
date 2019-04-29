@@ -1,7 +1,18 @@
 <?php 
-require '../php/_login.php';
-Lybra\App::setTitle('Autentification');
-ob_start();
+use Lybra\App;
+use Lybra\User\Auth;
+$error = "";
+if(!empty($_POST)){
+    extract($_POST);
+    $db = App::getDb();
+
+    $auth = new Auth($db);
+    $auth->login($username, $password);
+    $error = $auth->getError();
+
+}
+App::setTitle('Autentification');
+ob_start(); 
 ?>
 
 <div class="container mt-5 mb-5">

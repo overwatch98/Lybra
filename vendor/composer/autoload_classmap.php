@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Database' => $baseDir . '/config/Database.php',
-    'Lybra\\App' => $baseDir . '/classe/App.php',
 );
