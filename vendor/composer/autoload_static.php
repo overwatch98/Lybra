@@ -8,7 +8,6 @@ class ComposerStaticInitf68070df2b2528e7ab0c78f3af21e427
 {
     public static $files = array (
         'a1f11465c49d34f0aa7e7680260f728a' => __DIR__ . '/../..' . '/config/config.php',
-        'b6564a9ec8992bb544fe40dabee8c5eb' => __DIR__ . '/../..' . '/include/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -27,7 +26,6 @@ class ComposerStaticInitf68070df2b2528e7ab0c78f3af21e427
 
     public static $classMap = array (
         'Database' => __DIR__ . '/../..' . '/config/Database.php',
-        'Lybra\\App' => __DIR__ . '/../..' . '/classe/App.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

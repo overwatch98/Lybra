@@ -10,7 +10,7 @@ if(!empty($_POST)){
 		$error = "Veuillez remplir tout les champs";
 	}else{
 		if(is_string($firstName) && is_string($lastName) && is_string($status) && is_string($sexe)){
-			$req = $db->prepare("INSERT INTO profs SET sexe = ? firstName = ?, lastName = ?, statusprof = ?", [$sexe, $firstName, $lastName, $status]);
+			$req = $db->prepare("INSERT INTO profs SET sexe = ?, firstName = ?, lastName = ?, statusprof = ?", [$sexe, $firstName, $lastName, $status]);
 		}
 	}
 
@@ -28,7 +28,7 @@ if (!empty($_FILES['avatar']['name'])) {
 			$result = move_uploaded_file($_FILES['avatar']['tmp_name'], $path);
 			if($result){
 				$req = $db->prepare("UPDATE profs SET avatar = ? WHERE id = ?", [$_FILES['avatar']['name'], $id]);
-				redirect('admin');
+				App::redirect('admin');
 			}
 		}
 	}else{

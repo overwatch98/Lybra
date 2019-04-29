@@ -1,7 +1,8 @@
 <?php
+use Lybra\App;
 ob_start();
-Lybra\App::setTitle('Administration');
-isLogged();
+App::setTitle('Administration');
+App::isLogged();
 ?>
 
 <div class="jumbotron">

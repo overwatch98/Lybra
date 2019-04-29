@@ -1,3 +1,4 @@
+<?php use Lybra\App; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +9,12 @@
     <link rel="stylesheet" href="<?= CSS ?>default.css">
     <link rel="stylesheet" href="<?= CSS ?>lybra.css">
     <link rel="stylesheet" href="<?= CSS ?>bootstrap.min.css">
-    <title><?= Lybra\App::getTitle() ?></title>
+    <title><?= App::getTitle() ?></title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg">
 		<div class="container">
-			<h1 class="navbar-brand logo"><?= getLink("Lybra") ?></h1>
+			<h1 class="navbar-brand logo"><?= App::getLink("Lybra") ?></h1>
 			<button type="button" class="navbar-toggler mb-2" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expand="false" aria-label="Toggle navigation">
 	            <span class="navbar-toggler-icon btn-nav"> <img src="logo/menu.png" alt=""> </span>
 	        </button>
@@ -39,9 +40,9 @@
     <footer>
 		<div class="container">
 			<h3>Lycée de Boubara</h3>
-			<p><strong><?= getLink("Lybra") ?> </strong> est un site internet pour le lyceé de Boubara. Immaginé par <strong>Mr. Nana Nana</strong> professeur d'informatique et l'élève <strong><?= getLink('Mouhamed Amine') ?></strong>. Conçu et realisé par <strong><?= getLink('Mouhamed Amine') ?></strong></p>
+			<p><strong><?= App::getLink("Lybra") ?> </strong> est un site internet pour le lyceé de Boubara. Immaginé par <strong>Mr. Nana Nana</strong> professeur d'informatique et l'élève <strong><?= App::getLink('Mouhamed Amine') ?></strong>. Conçu et realisé par <strong><?= App::getLink('Mouhamed Amine') ?></strong></p>
 		</div>
-		<p class="copy-r">Copyright © <?= getLink("Lybra") ?> tout droit reservé</p>
+		<p class="copy-r">Copyright © <?= App::getLink("Lybra") ?> tout droit reservé</p>
 	</footer>  
 	<script type="text/javascript" src="<?= JS ?>jquery.min.js"></script>
     <script type="text/javascript" src="<?= JS ?>bootstrap.min.js"></script>  

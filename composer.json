@@ -10,8 +10,7 @@
     
     "autoload": {
         "files": [
-            "config/config.php",
-            "include/functions.php"
+            "config/config.php"
         ],
         "classmap": [
             "config/Database.php"

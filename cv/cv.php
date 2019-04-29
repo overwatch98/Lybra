@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../cv/asset/css/cv.css">
     <link rel="stylesheet" href="../cv/asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="../cv/asset/css/all.css">
-    <title>../cv Mouhamed Amine</title>
+    <title>Mouhamed Amine</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top">

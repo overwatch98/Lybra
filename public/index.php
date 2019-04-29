@@ -1,4 +1,5 @@
 <?php
+use Lybra\App;
 require '../vendor/autoload.php';
 if (session_status() === PHP_SESSION_NONE){
     session_start();
@@ -37,7 +38,7 @@ try {
     }
     elseif($url === 'sedeconnecter'){
         unset($_SESSION['auth']);
-        redirect('login');
+        App::redirect('login');
     }
     else{
         throw new Exception("La page que vous avez demandé n'existe pas ");
