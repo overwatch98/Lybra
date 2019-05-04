@@ -20,10 +20,10 @@
 	        </button>
 			<div class="collapse navbar-collapse mr-0" id="mynav">
 				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="accueil.html">Voir le site</a></li>
-					<li class="nav-item"><a class="nav-link" href="ajoutdeprof">Gestion des prof</a></li>
+					<li class="nav-item"><a class="nav-link" href="/accueil">Voir le site</a></li>
+					<li class="nav-item"><a class="nav-link" href="/ajoutdeprof">Gestion des prof</a></li>
 					<?php if (isset($_SESSION['auth'])) : ?>
-					<li class="nav-item"><a class="nav-link" href="sedeconnecter">Se déconnecter</a></li>
+					<li class="nav-item"><a class="nav-link" href="/sedeconnecter">Se déconnecter</a></li>
 					<?php endif; ?>
 				</ul>
 			</div>

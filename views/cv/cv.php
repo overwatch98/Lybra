@@ -2,11 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <base href="<?= BASE ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../cv/asset/css/cv.css">
-    <link rel="stylesheet" href="../cv/asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../cv/asset/css/all.css">
+    <link rel="stylesheet" href="../views/cv/asset/css/cv.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/all.css">
     <title>Mouhamed Amine</title>
 </head>
 <body>

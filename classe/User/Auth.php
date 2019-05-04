@@ -20,7 +20,7 @@ class Auth{
             $user = $this->db->prepare("SELECT * FROM users WHERE username = ? AND password = ?", [$username, $password])->fetch();
             if($user){ 
                 $_SESSION['auth'] = $user;
-                App::redirect('admin');
+                App::redirect('/admin');
            }else {
             $this->errors = "Identifiant ou mot de passe incorect";
            }

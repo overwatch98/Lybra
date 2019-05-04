@@ -31,15 +31,15 @@ class App{
 
     public static function getLink($link){
         if ($link === 'Mouhamed Amine'){
-            return '<a href="quisuisje" style="color:#eee; text-decoration:none">' . $link . '</a>';
+            return '<a href="/quisuisje" style="color:#eee; text-decoration:none">' . $link . '</a>';
         }else{
-            return '<a href="accueil" style="color:#eee; text-decoration:none">' . $link . '</a>';
+            return '<a href="/accueil" style="color:#eee; text-decoration:none">' . $link . '</a>';
         }
     }
 
     public static function isLogged(){
         if(!isset($_SESSION['auth'])){
-            self::redirect('login');
+            self::redirect('/login');
         }
     }
 
