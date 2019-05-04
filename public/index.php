@@ -1,5 +1,6 @@
 <?php
 use Lybra\App;
+use Lybra\Controller\PostController;
 require '../vendor/autoload.php';
 if (session_status() === PHP_SESSION_NONE){
     session_start();
@@ -9,7 +10,8 @@ try {
     $uri = $_SERVER['REQUEST_URI'];
     
     if($uri === '/accueil' || $uri === '/'){
-        require PAGE.'homeView.php';
+        $controller = new PostController;
+        $controller->index();
     }
     elseif($uri === '/professeur'){
         require PAGE . 'prof.php';
