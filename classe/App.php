@@ -39,7 +39,7 @@ class App{
 
     public static function isLogged(){
         if(!isset($_SESSION['auth'])){
-            redirect('login');
+            self::redirect('login');
         }
     }
 
