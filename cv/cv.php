@@ -38,7 +38,7 @@
          </div>
         </div>
         <div class="container">
-            <div class="pres col-lg-7 col-md-7">
+            <div class="pres col-lg-7 col-md-8">
                 <p>Passionné par le développement web dépuis plus de 3ans, tout a commencé avec une seule ligne de code quand mon prof d'informatique m'a donné un exercice sur les formulaires. C'est à ce instant que j'ai découvert ma passion pour le développement web et tout ce qui touche à l'informatique.</p>
             </div>
             <div id="competences" class="col-lg-7 col-md-8">

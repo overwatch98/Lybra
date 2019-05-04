@@ -19,11 +19,11 @@ a.nav-link{
 }
 a.nav-link:hover{
     color: #000;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #fff;  
 }
 a.active {
     color: #000;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #fff; 
 }
 .red-t{
     color: #c2185b;
@@ -139,10 +139,9 @@ form{
     margin: auto;
     text-align: center;
     padding: 20px;
-    background-color: #eee;
-    border-left: 2px solid #c2185b;
-    border-right: 2px solid #c2185b;
-    border-bottom: 2px solid #c2185b;
+    border-left: 1px solid #c5c5c5;
+    border-right: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
 }
 .imgdis{
     background-color: #fff;
