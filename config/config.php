@@ -2,7 +2,7 @@
 $root = $_SERVER['DOCUMENT_ROOT'];
 $host = $_SERVER['HTTP_HOST'];
 define('HOST', 'http://' . $host . '/lybra');
-define('ROOT', $root . '/lybra');
+define('ROOT', '../');   
 define('TEMPLATE', '../views/template/default.php');
 define('CSS', 'assets/css/');
 define('JS', 'assets/js/');

@@ -1,6 +1,5 @@
 <?php
 use Lybra\App;
-use Lybra\Controller\PostController;
 require '../vendor/autoload.php';
 if (session_status() === PHP_SESSION_NONE){
     session_start();
@@ -10,17 +9,20 @@ try {
     $uri = $_SERVER['REQUEST_URI'];
     
     if($uri === '/accueil' || $uri === '/'){
-        $controller = new PostController;
+        $controller = new \Lybra\Controller\PostController;
         $controller->index();
     }
     elseif($uri === '/professeur'){
-        require PAGE . 'prof.php';
+        $controller = new \Lybra\Controller\ProfController;
+        $controller->index();
     }
     elseif($uri === '/apropos'){
-        require PAGE . 'aboutView.php';
+        $controller = new \Lybra\Controller\PostController;
+        $controller->about();
     }
     elseif($uri === '/contact' ){
-        require PAGE . 'contact.php';
+        $controller = new \Lybra\Controller\PostController;
+        $controller->contact();
     }
     elseif($uri === '/mouhamedamine' || $uri === '/quisuisje'){
         require CV . 'cv.php';

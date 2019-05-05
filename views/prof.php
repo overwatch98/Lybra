@@ -1,7 +1,6 @@
 <?php 
 Lybra\App::setTitle('Liste des professeurs');
 require "../php/_prof.php";
-ob_start();
 ?>
 
 <div class="container">
@@ -25,7 +24,3 @@ ob_start();
         <?php endforeach ; ?>
     </div>
 </div>
-
-<?php
-$content = ob_get_clean();
-require TEMPLATE;

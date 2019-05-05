@@ -1,6 +1,4 @@
 <?php
-require '../php/_home.php';
-ob_start();
 Lybra\App::setTitle("Accueil");
 ?>
 <div class="banniere">
@@ -21,7 +19,3 @@ Lybra\App::setTitle("Accueil");
         <?php endforeach ; ?>
     </div>
 </div>
-<?php 
-$content = ob_get_clean();
-require TEMPLATE;
-?>
