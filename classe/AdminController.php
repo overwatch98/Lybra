@@ -2,9 +2,9 @@
 
 namespace Lybra;
 
-class Controller{
+class AdminController{
 
-    protected $template = TEMPLATE;
+    protected $template = ADMINTEMPLATE;
 
     public function render($view, $variables = []){
         ob_start();

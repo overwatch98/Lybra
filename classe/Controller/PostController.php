@@ -6,8 +6,6 @@ use Lybra\Controller;
 
 class PostController extends Controller{
 
-    protected $template = TEMPLATE;
-
     public function index(){
         $db = App::getDb();
         $posts = $db->getAll("posts");

@@ -1,20 +1,6 @@
-<?php 
-use Lybra\App;
-use Lybra\User\Auth;
-$error = "";
-if(!empty($_POST)){
-    extract($_POST);
-    $db = App::getDb();
-
-    $auth = new Auth($db);
-    $auth->login($username, $password);
-    $error = $auth->getError();
-
-}
-App::setTitle('Autentification');
-ob_start(); 
+<?php
+\Lybra\App::setTitle('Autentification');
 ?>
-
 <div class="container mt-5 mb-5">
     <h3 class="text-center mb-5">Veuillez vous authentifiez</h3>
     <form action="" method="post" class="card form col-lg-6 col-md-6 col-sm-12">
@@ -34,7 +20,3 @@ ob_start();
         </div>
     </form>
 </div>
-
-<?php
-$content = ob_get_clean();
-require TEMPLATE;

@@ -1,12 +1,5 @@
-<?php 
-require '../php/_addprof.php';
-Lybra\App::setTitle('Autentification');
-ob_start();
-
-?>
-
 <div class="container mt-5 mb-5">
-    <h3 class="text-center mb-4 red-f">Ajouter un professeur<h3>
+    <h3 class="text-center mb-4 red-f">Ajouter un professeur</h3>
     <form action="" method="post" enctype="multipart/form-data" class="col-lg-6 col-md-8 col-sm-12 m-auto">
         <?php if (!empty($error)):?>
             <div class="alert alert-danger"><?= $error ?></div>
@@ -32,7 +25,3 @@ ob_start();
         </div>
     </form>
 </div>
-
-<?php
-$content = ob_get_clean();
-require ADMINTEMPLATE;

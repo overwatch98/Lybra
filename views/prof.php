@@ -1,6 +1,5 @@
 <?php 
 Lybra\App::setTitle('Liste des professeurs');
-require "../php/_prof.php";
 ?>
 
 <div class="container">
@@ -12,8 +11,14 @@ require "../php/_prof.php";
                     <div class="avatar-prof">
                         <?php if (!empty($prof->avatar)): ?>
                             <img class="img img-thumbnail" src="avatar/<?= $prof->avatar ?>" alt="avatarprof">
+                            <?php if(isset($_SESSION['auth'])) :?>
+                                <a href="#">Modifier la photo</a>
+                            <?php endif ; ?>
                         <?php else : ?>
                             <img class="img img-thumbnail" src="avatar/default.png" alt="avatarprof">
+                            <?php if(isset($_SESSION['auth'])) :?>
+                                <a href="#">Ajouter une photo</a>
+                            <?php endif ; ?>
                         <?php endif ; ?>
                     </div>
                     <hr>

@@ -28,10 +28,12 @@ try {
         require CV . 'cv.php';
     }
     elseif($uri === '/login'){
-        require PAGE . 'loginView.php';
+        $controller = new \Lybra\Controller\UsersController;
+        $controller->login();
     }
     elseif($uri === '/ajoutdeprof'){
-        require ADMIN . 'addprof.php';
+        $controller = new \Lybra\Controller\Admin\ProfController;
+        $controller->add();
     }
     elseif($uri === '/admin'){
         require ADMIN . 'home.php';
