@@ -9,6 +9,7 @@ define('JS', 'assets/js/');
 define('ADMINTEMPLATE', '../backend/template/admin.php');
 define('PAGE', '../views/');
 define('ADMIN', '../backend/');
+define('LYBRAPATH', 'asset/css/cv.css');
 define('CV', '../views/cv/');
 define('LOGO', 'logo/');
 define('IMG', 'img/');

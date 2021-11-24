@@ -39,7 +39,7 @@ class Database {
         return $data;
     }
 
-    public function find( $table, $field, $params) {
+    public function find($table, $field, $params) {
         $recod = $this->prepare("SELECT * FROM {$table} WHERE {$field} = ?", [$params]);
         $recod =  $recod->fetch();
         return $recod;

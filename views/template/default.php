@@ -37,7 +37,7 @@
     
     <?= $content ?>
 
-    <footer>
+    <footer class="mb-0">
 		<div class="container">
 			<h3>Lycée de Boubara</h3>
 			<p><strong><?= App::getLink("Lybra") ?> </strong> est un site internet pour le lyceé de Boubara. Immaginé par <strong>Mr. Nana Nana</strong> professeur d'informatique et l'élève <strong><?= App::getLink('Mouhamed Amine') ?></strong>. Conçu et realisé par <strong><?= App::getLink('Mouhamed Amine') ?></strong></p>

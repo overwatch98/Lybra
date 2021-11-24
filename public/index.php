@@ -25,7 +25,7 @@ try {
         $controller->contact();
     }
     elseif($uri === '/mouhamedamine' || $uri === '/quisuisje'){
-        require CV . 'cv.php';
+        require_once CV . 'cv.php';
     }
     elseif($uri === '/login'){
         $controller = new \Lybra\Controller\UsersController;

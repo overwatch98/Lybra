@@ -5,18 +5,19 @@
     <base href="<?= BASE ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../views/cv/asset/css/cv.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="asset/css/all.css">
+    <link rel="stylesheet" href="asset/css/cv.css">
+    <link rel="stylesheet" href="assets/css/cv.css">
+    <link rel="stylesheet" href="asset//css/bootstrap.min.css">
     <title>Mouhamed Amine</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top">
         <button type="button" class="navbar-toggler mb-2" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expand="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon btn-nav"> <img src="../cv/asset/img/menu.png" alt=""> </span>
+            <span class="navbar-toggler-icon btn-nav"> <img src="asset/img/menu.png" alt=""> </span>
         </button>
         <div class="collapse navbar-collapse" id="mynav">
             <ul class="navbar-nav m-auto">
+                <h3><a href="accueil" style="color: #fff; margin-right: 10px" >Lybra</a></h3>
                 <li class="nav-item"><a class="active nav-link" href="#moi">Moi</a></li>
                 <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
                 <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
@@ -31,7 +32,7 @@
     <div data-spy="scroll" data-target="mynav" data-offset="0">
        <div id="moi" class="container-fluid cv-header">
           <div class="img">
-              <img src="../cv/asset/img/profil.jpg" alt="">
+              <img src="asset/img/profil.jpg" alt="">
               <hr class="imgdis">
               <em>Hello ! moi c'est </em>
               <h4>Mouhamed Amine</h4>
@@ -110,26 +111,26 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="p-3 card mb-4">
-                            <span class="text-muted text-center mb-2">2011-2017</span>
+                            <span class="text-muted text-center mb-2">2020-2021</span>
                             <div class="univer">
-                              <img src="../cv/asset/img/university.svg" alt="">
+                              <img src="asset/img/university.svg" alt="">
                             </div>
-                            <h5 class="red-t mt-2 text-center">Garoua-Boulai Highschool</h4>
-                            <p class="text-center">Diplôme d'enseignement géneral</p>
+                            <h5 class="red-t mt-2 text-center">INSTITUT UNIVERSITAIRE SIANTOU</h4>
+                            <p class="text-center">Licence en genie Logiciel et Base de donnees</p>
                             <hr class="hr-educ m-auto">
-                            <p class="text-center mt-2">Math, Svt, Physique, Chimie</p>
+                            <p class="text-center mt-2">Base de donnees, Programmation, Infographie</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="p-3 card mb-4">
                             <span class="text-muted text-center mb-2">2017-Aujord'hui</span>
                             <div class="univer">
-                              <img src="../cv/asset/img/university.svg" alt="">
+                              <img src="asset/img/university.svg" alt="">
                             </div>
                             <h5 class="red-t text-center mt-2">Openclassrooms</h4>
-                            <p class="text-center">Formation online "Développeur web"</p>
+                            <p class="text-center">Formation online "Développeur Full Stack"</p>
                             <hr class="hr-educ m-auto">
-                            <p class="text-center mt-2">HTML, CSS, PHP, Bootstrap</p>
+                            <p class="text-center mt-2">HTML, CSS, PHP, JavaScript, Bootstrap, Laravel, React Native, Angular</p>
                         </div>
                     </div>
                 </div>
@@ -141,16 +142,16 @@
                 <h3 class="text-center sec-t">PORTEFOLIO</h3>
                 <div class="row pr-sec">
                     <div class="sec-exp-p col-lg-6 col-md-6 pb-3">
-                        <img src="../cv/asset/img/pr2.png" alt="">
+                        <img src="asset/img/pr2.png" alt="">
                     </div>
                     <div class="sec-exp-p col-lg-6 col-md-6 pb-3">
-                        <img src="../cv/asset/img/pr3.png" alt="">
+                        <img src="asset/img/pr3.png" alt="">
                     </div>
                     <div class="sec-exp-p col-lg-6 col-md-6 pb-3">
-                        <img src="../cv/asset/img/pr4.png" alt="">
+                        <img src="asset/img/pr4.png" alt="">
                     </div>
                     <div class="sec-exp-p col-lg-6 col-md-6 pb-3">
-                        <img src="../cv/asset/img/pr1.png" alt="">
+                        <img src="asset/img/pr1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -188,8 +189,8 @@
             <p class="text-center">Copyright © Mouhamed Amine</p>
         </div>
     </footer>
-    <script type="text/javascript" src="../cv/asset/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../cv/asset/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../cv/asset/js/cv.js"></script>
+    <script type="text/javascript" src="asset/js/jquery.min.js"></script>
+    <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="asset/js/cv.js"></script>
 </body>
 </html>
